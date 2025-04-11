@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 import { Button } from '@/components/ui/button';
+import { Github, Linkedin } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -30,7 +31,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="hover:text-accent transition-colors"
         >
-          LinkedIn
+          <Linkedin />
         </Link>
         <Link
           href={siteConfig.links.github}
@@ -38,7 +39,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="hover:text-accent transition-colors"
         >
-          GitHub
+          <Github />
         </Link>
         {/* Add more social media links here */}
       </div>

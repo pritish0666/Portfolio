@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
+import { Instagram, Github, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -18,15 +19,23 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:text-accent transition-colors"
           >
-            Instagram
+            <Instagram />
           </Link>
-          <Link
-            href={siteConfig.links.whatsapp}
+           <Link
+            href={siteConfig.links.github}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-accent transition-colors"
           >
-            WhatsApp
+            <Github />
+          </Link>
+          <Link
+            href={siteConfig.links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition-colors"
+          >
+            <Linkedin />
           </Link>
           {/* Add more social media links here */}
         </div>
@@ -36,3 +45,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+    
