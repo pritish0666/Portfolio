@@ -1,8 +1,10 @@
 
-import {ArrowRight, Check, ChevronsUpDown, Circle, Copy, Edit, ExternalLink, File, HelpCircle, Home, Loader2, Mail, MessageSquare, Moon, Plus, PlusCircle, Search, Server, Settings, Share2, Shield, Sun, Trash, User, X, Workflow, Instagram, WhatsApp, Github, Linkedin} from 'lucide-react';
+import { ArrowRight, Check, ChevronsUpDown, Circle, Copy, Edit, File, HelpCircle, Home, Loader2, Mail, MessageSquare, Moon, Plus, PlusCircle, Search, Server, Settings, Share2, Shield, Sun, Trash, User, X, Workflow, Instagram, Github, Linkedin, MessageCircle, School2, Calendar, Book, MapPin, ExternalLink } from 'lucide-react';
 
 const Icons = {
   arrowRight: ArrowRight,
+  school: School2,
+  messageCircle: MessageCircle,
   check: Check,
   chevronDown: ChevronsUpDown,
   circle: Circle,
@@ -30,7 +32,9 @@ const Icons = {
   trash: Trash,
   user: User,
    instagram: Instagram,
-  whatsApp: WhatsApp,
+  calendar: Calendar,
+  book: Book,
+  mapPin: MapPin,
   github: Github,
   linkedin: Linkedin,
 };

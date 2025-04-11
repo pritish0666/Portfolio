@@ -7,6 +7,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { submitForm, FormSubmission } from '@/services/form-submission';
 import { useToast } from '@/hooks/use-toast';
+import { siteConfig } from '@/config/site';
+import { Icons } from '@/components/icons';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -25,14 +27,14 @@ const Contact = () => {
 
     try {
       await submitForm(submission);
-        toast({
-          title: "Success!",
-          description: "Your message has been sent.",
-        });
       // Clear the form after successful submission
       setName('');
       setEmail('');
       setMessage('');
+      toast({
+        title: "Success!",
+        description: "Your message has been sent.",
+      });
 
     } catch (error: any) {
         toast({
@@ -92,6 +94,42 @@ const Contact = () => {
         <Button type="submit" className="w-full btn-hover-effect">
           Send Message
         </Button>
+
+        {/* Social Media Links Below Form */}
+        <div className="flex justify-center space-x-4 mt-6">
+          <a
+            href={siteConfig.links.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition-colors"
+          >
+            <Icons.instagram />
+          </a>
+          <a
+            href={siteConfig.links.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition-colors"
+          >
+            <Icons.github />
+          </a>
+          <a
+            href={siteConfig.links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition-colors"
+          >
+            <Icons.linkedin />
+          </a>
+          <a
+            href={siteConfig.links.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition-colors"
+          >
+            <Icons.messageCircle />
+          </a>
+        </div>
       </form>
     </section>
   );

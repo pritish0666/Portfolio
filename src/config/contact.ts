@@ -1,0 +1,1 @@
+export const contactInfo = [{"name":"pritish","email":"w@gmail.com","message":"hii"},{"name":"fxfh","email":"h@gmail.com","message":"hiii"},{"name":"ll","email":"l@gmail.com","message":"awawa"},{"name":"pritish","email":"p@gmail.com","message":"hiii ! how are you ?"}];

@@ -24,23 +24,25 @@ export interface FormSubmission {
  * @param submission The form submission data to be sent.
  * @returns A promise that resolves when the form is successfully submitted.  May return error if submission fails.
  */
-export async function submitForm(submission: FormSubmission): Promise<void> {
-  // Using Formspree
-  const endpoint = "https://formspree.io/f/your-form-id"; // Replace with your Formspree endpoint
-
-  const response = await fetch(endpoint, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Accept": "application/json",
-    },
-    body: JSON.stringify(submission),
-  });
-
-  if (!response.ok) {
-    const message = `Form submission failed: ${response.status}`;
-    throw new Error(message);
-  }
-
-  return;
+export async function submitForm(submission: FormSubmission) {
+    try {
+        const response = await fetch('/api/submit-contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(submission),
+        });
+        if (response.ok) {
+            console.log('Submission sent successfully.');
+        }
+        else {
+            const errorData = await response.json();
+            throw new Error(errorData.error || 'Failed to send submission');
+        }
+    }
+    catch (error: any) {
+        console.error('Error sending submission:', error);
+        throw new Error(`Could not send submission: ${error.message}`);
+    }
 }

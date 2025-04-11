@@ -13,7 +13,9 @@ const Navigation = () => {
       <div className="container py-4">
         <nav className="flex items-center justify-between">
           {/* Name on the left */}
-          <div className="text-lg font-bold">{siteConfig.name}</div>
+          <div className="text-lg font-bold">
+            Pritish
+          </div>
 
           {/* Navigation links in the middle */}
           <div className="hidden md:flex space-x-6">

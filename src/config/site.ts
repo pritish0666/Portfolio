@@ -1,19 +1,19 @@
 
 export const siteConfig = {
-  name: 'PRITISH',
+  name: 'PRITISH P PATRA',
   description:
     'Full Stack Developer || Bangalore',
   images: {
-    profile: 'https://picsum.photos/200/200',
-    about: 'https://picsum.photos/300/300',
+    profile: '/pro.jpeg',
+    about: '/about1.jpeg',
   },
   links: {
-    linkedin: 'https://www.linkedin.com/',
-    github: 'https://github.com/',
-    instagram: 'https://www.instagram.com/',
-    whatsapp: 'https://www.whatsapp.com/',
+    linkedin: 'https://www.linkedin.com/in/pritish-p-patra-25548421a/',
+    github: 'https://github.com/pritish0666',
+    instagram: 'https://www.instagram.com/pritish._.29/',
+    whatsapp: 'https://wa.me/917681040982',
     buyMeCoffee: 'https://www.buymeacoffee.com/',
-    resume: 'resume.pdf',
+    resume: '/resume.pdf',
   },
   about: {
     description:
@@ -32,6 +32,10 @@ export const siteConfig = {
         'Point 2: Explain the technologies used.',
         'Point 3: Highlight a key feature or challenge.',
       ],
+      links: {
+        github: 'https://github.com/',
+        deployment: 'https://example.com/',
+      },
     },
     {
       name: 'Project 2',
@@ -40,6 +44,34 @@ export const siteConfig = {
         'Point 2: Explain the technologies used.',
         'Point 3: Highlight a key feature or challenge.',
       ],
+      links: {
+        github: 'https://github.com/',
+        deployment: 'https://example.com/',
+      },
+    },
+    {
+      name: 'Project 3',
+      description: [
+        'Point 1: Describe the project and your role.',
+        'Point 2: Explain the technologies used.',
+        'Point 3: Highlight a key feature or challenge.',
+      ],
+      links: {
+        github: 'https://github.com/',
+        deployment: 'https://example.com/',
+      },
+    },
+    {
+      name: 'Project 4',
+      description: [
+        'Point 1: Describe the project and your role.',
+        'Point 2: Explain the technologies used.',
+        'Point 3: Highlight a key feature or challenge.',
+      ],
+      links: {
+        github: 'https://github.com/',
+        deployment: 'https://example.com/',
+      },
     },
   ],
 };
