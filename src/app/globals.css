@@ -9,8 +9,8 @@ body {
 
 @layer base {
   :root {
-    --background: linear-gradient(135deg, #4A148C 0%, #004D40 100%); /* Gradient background */
-    --foreground: 0 0% 98%; /* Light gray/white */
+    --background: #121212; /* Dark gray/black */
+    --foreground: 200 10% 98%; /* Light gray/white */
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
@@ -43,9 +43,10 @@ body {
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
   .dark {
-    --background: linear-gradient(135deg, #4A148C 0%, #004D40 100%); /* Gradient background */
-    --foreground: 0 0% 98%; /* Light gray/white */
+    --background: #121212; /* Dark gray/black */
+    --foreground: 200 10% 98%; /* Light gray/white */
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
