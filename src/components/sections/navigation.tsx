@@ -16,7 +16,7 @@ const Navigation = () => {
         <nav className="flex items-center justify-between w-full">
           {/* Name on the left */}
           <div className="text-lg font-bold">
-            Pritish
+            Portfolio
           </div>
 
           {/* Navigation links in the middle */}
