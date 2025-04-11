@@ -1,8 +1,8 @@
 
 export const siteConfig = {
-  name: 'Your Name',
+  name: 'PRITISH',
   description:
-    'A brief introduction about yourself. This can include your expertise, interests, and what you are passionate about.',
+    'Full Stack Developer || Bangalore',
   images: {
     profile: 'https://picsum.photos/200/200',
     about: 'https://picsum.photos/300/300',
@@ -13,11 +13,11 @@ export const siteConfig = {
     instagram: 'https://www.instagram.com/',
     whatsapp: 'https://www.whatsapp.com/',
     buyMeCoffee: 'https://www.buymeacoffee.com/',
-    resume: '/resume.pdf',
+    resume: '../../resume.pdf',
   },
   about: {
     description:
-      'A more detailed description about yourself. You can include your background, skills, and experiences. Feel free to add multiple paragraphs.',
+      'Driven Software Developer specializing in backend and full-stack roles, with a strong command of JavaScript, C, and Python. Certified in Data Structures and Python Programming, skilled in Node.js, React.js, and MongoDB. Proven ability to build secure, scalable web applications and improve database management and API integrations. Passionate about leveraging deep technical expertise and robust problem-solving skills to contribute to innovative software solutions in dynamic environments.',
     achievements: [
       'Achievement 1: Describe your achievement.',
       'Achievement 2: Describe your achievement.',

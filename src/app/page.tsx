@@ -18,14 +18,13 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
+          <Hero />
+          <About />
+          <Projects />
+          <Contact />
       </main>
 
       <Footer />
     </div>
   );
 }
-
