@@ -33,7 +33,7 @@ body {
     --chart-3: 330 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 310 75% 55%;
-    --radius: 0.5rem;
+    --radius: 0.75rem;
     --sidebar-background: 270 10% 12%;
     --sidebar-foreground: 270 10% 90%;
     --sidebar-primary: 280 76% 48%;
@@ -88,3 +88,33 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Add shadows to cards and other elements */
+.card-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Improve button hover state */
+.btn-hover-effect {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-hover-effect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Improve typography */
+.text-pretty {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Highlight active navigation link */
+.nav-active {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+

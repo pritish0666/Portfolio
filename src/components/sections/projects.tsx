@@ -9,7 +9,7 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {siteConfig.projects.map((project) => (
-          <div key={project.name} className="border rounded-lg p-6">
+          <div key={project.name} className="border rounded-lg p-6 card-shadow">
             <h3 className="text-xl font-semibold mb-4">{project.name}</h3>
             <ul className="list-disc list-inside">
               {project.description.map((point, index) => (

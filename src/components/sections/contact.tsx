@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState } from 'react';
@@ -48,7 +49,7 @@ const Contact = () => {
     <section id="contact" className="container py-24">
       <h2 className="text-3xl font-bold mb-8 text-center">Contact Me</h2>
 
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+      <form onSubmit={handleSubmit} className="max-w-lg mx-auto card-shadow rounded-lg p-8">
         <div className="mb-4">
           <label htmlFor="name" className="block text-sm font-medium mb-1">
             Name
@@ -88,7 +89,7 @@ const Contact = () => {
             required
           />
         </div>
-        <Button type="submit" className="w-full">
+        <Button type="submit" className="w-full btn-hover-effect">
           Send Message
         </Button>
       </form>

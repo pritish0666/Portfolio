@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="container py-24 text-center">
       {/* Profile Photo */}
-      <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden mb-8">
+      <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden mb-8 card-shadow">
         <Image
           src={siteConfig.images.profile}
           alt="Profile Picture"
@@ -20,8 +20,8 @@ const Hero = () => {
       </div>
 
       {/* Introduction */}
-      <h1 className="text-4xl font-bold mb-4">{siteConfig.name}</h1>
-      <p className="text-lg mb-8">{siteConfig.description}</p>
+      <h1 className="text-4xl font-bold mb-4 text-pretty">{siteConfig.name}</h1>
+      <p className="text-lg mb-8 text-pretty">{siteConfig.description}</p>
 
       {/* Social Media Links */}
       <div className="flex justify-center space-x-6 mb-8">
@@ -45,7 +45,7 @@ const Hero = () => {
       </div>
 
       {/* Download Resume Button */}
-      <Button>
+      <Button className="btn-hover-effect">
         <a href={siteConfig.links.resume} target="_blank" rel="noopener noreferrer">
           Download Resume
         </a>

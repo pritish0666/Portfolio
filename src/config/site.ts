@@ -13,7 +13,7 @@ export const siteConfig = {
     instagram: 'https://www.instagram.com/',
     whatsapp: 'https://www.whatsapp.com/',
     buyMeCoffee: 'https://www.buymeacoffee.com/',
-    resume: '../../resume.pdf',
+    resume: 'resume.pdf',
   },
   about: {
     description:

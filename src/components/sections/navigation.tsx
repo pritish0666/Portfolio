@@ -1,10 +1,13 @@
+'use client';
 
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { siteConfig } from '@/config/site';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
+  const router = useRouter();
   return (
     <div className="bg-secondary py-4 shadow-md">
       <div className="container py-4">
@@ -33,7 +36,7 @@ const Navigation = () => {
 
           {/* Buy Me Coffee link on the right */}
           <div>
-            <Button variant="outline" asChild>
+            <Button variant="outline" asChild className="btn-hover-effect">
               <Link
                 href={siteConfig.links.buyMeCoffee}
                 target="_blank"

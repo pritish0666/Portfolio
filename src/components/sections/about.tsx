@@ -10,7 +10,7 @@ const About = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Profile Photo */}
-        <div className="relative w-full h-96 overflow-hidden rounded-lg">
+        <div className="relative w-full h-96 overflow-hidden rounded-lg card-shadow">
           <Image
             src={siteConfig.images.about}
             alt="About Me Picture"
@@ -21,7 +21,7 @@ const About = () => {
 
         {/* Description and Achievements */}
         <div>
-          <p className="mb-4">
+          <p className="mb-4 text-pretty">
             {siteConfig.about.description}
           </p>
 
