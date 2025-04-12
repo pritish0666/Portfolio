@@ -75,30 +75,6 @@ const About = () => {
             ))}
           </ul>
         </div>
-        <div className="relative w-full h-48 overflow-hidden rounded-lg card-shadow">
-            <div
-              className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
-              style={{
-                transform: `translateX(-${currentImageIndex * 100}%)`,
-              }}
-            >
-              {images.map((image, index) => (
-                <div
-                  key={index}
-                  className="w-full flex-shrink-0 relative opacity-60"
-                  style={{ width: '100%' }}
-                >
-                  <Image
-                    src={image}
-                    alt={`Slide ${index + 1}`}
-                    layout="fill"
-                    objectFit="cover"
-                    priority
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
       </div>
     </section>
   );
