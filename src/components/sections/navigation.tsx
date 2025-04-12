@@ -2,9 +2,9 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { siteConfig } from '@/config/site';
-import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import {siteConfig} from '@/config/site';
+import {Button} from '@/components/ui/button';
+import {Menu, X} from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -21,19 +21,28 @@ const Navigation = () => {
 
           {/* Navigation links in the middle */}
           <div className="hidden md:flex space-x-6 items-center">
-            <Link href="/" className="nav-link-hover transition-colors no-underline hover:underline">
+            <Link
+              href="/"
+              className="nav-link-hover transition-colors no-underline hover:underline rounded-full px-3 py-1 hover:bg-accent hover:text-accent-foreground"
+            >
               Home
             </Link>
-            <Link href="#about" className="nav-link-hover transition-colors no-underline hover:underline">
+            <Link
+              href="#about"
+              className="nav-link-hover transition-colors no-underline hover:underline rounded-full px-3 py-1 hover:bg-accent hover:text-accent-foreground"
+            >
               About
             </Link>
             <Link
               href="#projects"
-              className="nav-link-hover transition-colors no-underline hover:underline"
+              className="nav-link-hover transition-colors no-underline hover:underline rounded-full px-3 py-1 hover:bg-accent hover:text-accent-foreground"
             >
               Projects
             </Link>
-            <Link href="#contact" className="nav-link-hover transition-colors no-underline hover:underline">
+            <Link
+              href="#contact"
+              className="nav-link-hover transition-colors no-underline hover:underline rounded-full px-3 py-1 hover:bg-accent hover:text-accent-foreground"
+            >
               Contact
             </Link>
           </div>
@@ -52,21 +61,36 @@ const Navigation = () => {
             }`}
           >
             <div className="flex flex-col items-end p-4">
-              <Link href="/" className="block py-2 hover:text-accent transition-colors" onClick={toggleMenu}>
+              <Link
+                href="/"
+                className="block py-2 hover:text-accent transition-colors"
+                onClick={toggleMenu}
+              >
                 Home
               </Link>
-              <Link href="#about" className="block py-2 hover:text-accent transition-colors" onClick={toggleMenu}>
+              <Link
+                href="#about"
+                className="block py-2 hover:text-accent transition-colors"
+                onClick={toggleMenu}
+              >
                 About
               </Link>
-              <Link href="#projects" className="block py-2 hover:text-accent transition-colors" onClick={toggleMenu}>
+              <Link
+                href="#projects"
+                className="block py-2 hover:text-accent transition-colors"
+                onClick={toggleMenu}
+              >
                 Projects
               </Link>
-              <Link href="#contact" className="block py-2 hover:text-accent transition-colors" onClick={toggleMenu}>
+              <Link
+                href="#contact"
+                className="block py-2 hover:text-accent transition-colors"
+                onClick={toggleMenu}
+              >
                 Contact
               </Link>
             </div>
           </div>
-
 
           {/* Buy Me Coffee link (always on the right) */}
           <div>
