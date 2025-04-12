@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Pritish: Portfolio',
   description: 'made with love by pritish',
+  // If you want to change the favicon, replace "favicon.ico" with your favicon file in the public directory
+  // and update the href below.
+  icons: ['/favicon.png'],
 };
 
 export default function RootLayout({
@@ -34,5 +37,4 @@ export default function RootLayout({
     </html>
   );
 }
-
 
