@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useEffect, useState } from 'react';
@@ -65,15 +66,6 @@ const About = () => {
               <span className="font-medium">Location:&nbsp;</span> Bangalore
             </div>
           </div>
-
-
-          {/* Achievements */} 
-          <h3 className="text-xl font-semibold mb-2">Achievements</h3>
-          <ul className="list-disc list-inside">
-            {siteConfig.about.achievements.map((achievement, index) => (
-              <li key={index}>{achievement}</li>
-            ))}
-          </ul>
         </div>
       </div>
     </section>
