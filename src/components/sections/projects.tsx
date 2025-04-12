@@ -34,11 +34,15 @@ const Projects: React.FC = () => {
                   </a>
                 )}
                 {project.links.deployment && (
-                  <Button asChild className="btn-hover-effect">
-                    <a href={project.links.deployment} target="_blank" rel="noopener noreferrer">
-                      View Project
-                    </a>
-                  </Button>
+                  <a
+                    href={project.links.deployment}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                    aria-label={`View ${project.name} Deployment`}
+                  >
+                    <Icons.externalLink className="h-6 w-6" />
+                  </a>
                 )}
               </div>
             )}
