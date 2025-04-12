@@ -36,15 +36,8 @@ const About = () => {
             layout="fill"
             objectFit="cover"
           />
-        </div>
-
-        {/* Description and Achievements */}
-        <div>
-          <p className="mb-4 text-pretty text-justify">
-            {siteConfig.about.description}
-          </p>
            {/* Sliding Background Images */}
-           <div className="relative w-full h-48 overflow-hidden mb-8">
+           <div className="relative w-full h-48 overflow-hidden mt-8">
             <div
               className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
               style={{
@@ -68,6 +61,14 @@ const About = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Description and Achievements */}
+        <div>
+          <p className="mb-4 text-pretty text-justify">
+            {siteConfig.about.description}
+          </p>
+          
 
           {/* Education Details Card */}
           <div className="rounded-lg card-shadow p-6 mb-8 bg-card">
