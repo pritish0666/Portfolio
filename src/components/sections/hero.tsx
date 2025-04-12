@@ -26,7 +26,12 @@ const Hero = () => {
   return (
     <section className="container py-24 relative overflow-hidden">
       {/* Sliding Images (Background) */}
-      <div className="absolute inset-0 flex transition-transform duration-1000 ease-in-out">
+      <div
+        className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
+        style={{
+          transform: `translateX(-${currentImageIndex * 100}%)`,
+        }}
+      >
         {images.map((image, index) => (
           <div
             key={index}
