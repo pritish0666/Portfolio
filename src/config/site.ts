@@ -32,7 +32,6 @@ export const siteConfig = {
         'Designed a secure authentication system using CAPTCHA verification, refresh tokens, and access tokens, improving security by 40%.',
         'Integrated RAZORPAY API for seamless payment handling, successfully processing over 95% of transactions without errors.',
         'Optimized database queries using MongoDB Aggregation Pipeline, reducing query time by 30%.',
-        'Automated PDF generation and email dispatch via Gmail SMTP, saving up to 20 hours of manual effort monthly.',
       ],
       links: {
         github: 'https://github.com/pritish0666/Backend_Project',
@@ -51,15 +50,15 @@ export const siteConfig = {
       },
     },
     {
-      name: 'Project 3',
+      name: 'Real-Time Chat App',
       description: [
-        'Point 1: Describe the project and your role.',
-        'Point 2: Explain the technologies used.',
-        'Point 3: Highlight a key feature or challenge.',
+        'Built a MERN chat app with Socket.IO, reducing latency by 80% for real-time messaging.',
+        'Enhanced user privacy by implementing encrypted data storage, increasing data security compliance by 50%.',
+        'Deployed using Render Free Tier, achieving 99.9% uptime during stress testing with up to 100 concurrent users.',
       ],
       links: {
-        github: 'https://github.com/',
-        deployment: 'https://example.com/',
+        github: 'https://github.com/pritish0666/ChatApp',
+        deployment: 'https://chatapp-6sfx.onrender.com/',
       },
     },
     {
@@ -77,4 +76,3 @@ export const siteConfig = {
   ],
 };
 
-    
