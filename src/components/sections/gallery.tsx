@@ -43,7 +43,7 @@ const Gallery = () => {
     <section id="gallery" className="container py-24">
       <h2 className="text-3xl font-bold mb-8 text-center">Gallery</h2>
       <div className="relative">
-        <div className="relative h-96 overflow-hidden">
+        <div className="relative h-[600px] overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
@@ -90,4 +90,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
