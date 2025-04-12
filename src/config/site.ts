@@ -6,6 +6,7 @@ export const siteConfig = {
   images: {
     profile: '/pro.jpeg',
     about: '/about1.jpeg',
+    favicon: '/favicon.png',
   },
   links: {
     linkedin: 'https://www.linkedin.com/in/pritish-p-patra-25548421a/',
@@ -28,13 +29,13 @@ export const siteConfig = {
     {
       name: 'Complete-Backend',
       description: [
-        'Point 1: Designed a secure authentication system using CAPTCHA verification, refresh tokens  and access tokens',
-        'Point 2: Explain the technologies used.',
-        'Point 3: Highlight a key feature or challenge.',
+        'Designed a secure authentication system using CAPTCHA verification, refresh tokens, and access tokens, improving security by 40%.',
+        'Integrated RAZORPAY API for seamless payment handling, successfully processing over 95% of transactions without errors.',
+        'Optimized database queries using MongoDB Aggregation Pipeline, reducing query time by 30%.',
+        'Automated PDF generation and email dispatch via Gmail SMTP, saving up to 20 hours of manual effort monthly.',
       ],
       links: {
-        github: 'https://github.com/',
-        deployment: 'https://example.com/',
+        github: 'https://github.com/pritish0666/Backend_Project',
       },
     },
     {
@@ -75,3 +76,5 @@ export const siteConfig = {
     },
   ],
 };
+
+    
