@@ -1,10 +1,28 @@
+'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { siteConfig } from '@/config/site';
 import { Icons } from '@/components/icons';
 
 const About = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const images = [
+    '/p1.jpeg',
+    '/p2.jpg',
+    '/p3.jpeg',
+    'https://picsum.photos/id/240/3000/2000',
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(intervalId); // Clear interval on unmount
+  }, [images.length]);
+
   return (
     <section id="about" className="container py-24">
       <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
@@ -25,6 +43,31 @@ const About = () => {
           <p className="mb-4 text-pretty text-justify">
             {siteConfig.about.description}
           </p>
+           {/* Sliding Background Images */}
+           <div className="relative w-full h-48 overflow-hidden mb-8">
+            <div
+              className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
+              style={{
+                transform: `translateX(-${currentImageIndex * 100}%)`,
+              }}
+            >
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  className="w-full flex-shrink-0 relative opacity-60"
+                  style={{ width: '100%' }}
+                >
+                  <Image
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    layout="fill"
+                    objectFit="cover"
+                    priority
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
 
           {/* Education Details Card */}
           <div className="rounded-lg card-shadow p-6 mb-8 bg-card">
@@ -62,3 +105,5 @@ const About = () => {
 };
 
 export default About;
+
+    
