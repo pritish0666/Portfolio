@@ -1,8 +1,7 @@
 'use client';
 
-import React, {useState, useEffect, useRef} from 'react';
+import React from 'react';
 import Image from 'next/image';
-import {ChevronLeft, ChevronRight} from 'lucide-react';
 
 const images = [
   '/p5.jpeg',
@@ -12,82 +11,24 @@ const images = [
 ];
 
 const Gallery = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-
-  const handlePrev = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setCurrentImageIndex(prevIndex => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-  };
-
-  const handleNext = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setCurrentImageIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-  };
-
-  useEffect(() => {
-    if (isAnimating) {
-      timeoutRef.current = setTimeout(() => {
-        setIsAnimating(false);
-      }, 500); // Duration of the transition, adjust as needed
-    }
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    };
-  }, [isAnimating]);
-
   return (
     <section id="gallery" className="container py-24">
       <h2 className="text-3xl font-bold mb-8 text-center">Gallery</h2>
-      <div className="relative">
-        <div className="relative h-[450px] overflow-hidden">
-          <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{
-              transform: `translateX(-${currentImageIndex * 100}%)`,
-            }}
-          >
-            {images.map((image, index) => (
-              <div
-                key={index}
-                className="w-full flex-shrink-0 relative"
-              >
-                <Image
-                  src={image}
-                  alt={`Gallery Image ${index + 1}`}
-                  width={800}
-                  height={450}
-                  style={{
-                    objectFit: 'cover',
-                    width: '100%',
-                    height: '100%',
-                  }}
-                />
-              </div>
-            ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {images.map((image, index) => (
+          <div key={index} className="rounded-lg shadow-md overflow-hidden">
+            <Image
+              src={image}
+              alt={`Gallery Image ${index + 1}`}
+              width={500}
+              height={300}
+              className="object-cover w-full h-full"
+            />
           </div>
-        </div>
-        <button
-          onClick={handlePrev}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/20 text-white p-2 rounded-full hover:bg-black/50"
-          aria-label="Previous"
-        >
-          <ChevronLeft className="h-6 w-6" />
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/20 text-white p-2 rounded-full hover:bg-black/50"
-          aria-label="Next"
-        >
-          <ChevronRight className="h-6 w-6" />
-        </button>
+        ))}
       </div>
     </section>
   );
 };
 
 export default Gallery;
-
