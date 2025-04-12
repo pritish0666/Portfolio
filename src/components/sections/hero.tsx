@@ -46,26 +46,6 @@ const Hero = () => {
 
       {/* Content Container (to ensure text is above the images) */}
       <div className="relative z-10 flex flex-col items-center justify-center">
-        
-        {/* Sliding Images (Background) */}
-        <div className="absolute inset-0 flex transition-transform duration-1000 ease-in-out">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="w-full flex-shrink-0 relative opacity-60"
-              style={{ width: '100%' }}
-            >
-              <Image
-                src={image}
-                alt={`Slide ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                priority
-              />
-            </div>
-          ))}
-        </div>
-
         {/* Profile Photo */}
         <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden mb-8 shadow-xl border-2 border-accent">
           <Image
