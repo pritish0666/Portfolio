@@ -19,7 +19,7 @@ const Hero = () => {
         />
       </div>
       {/* Introduction */}
-      <h1 className="text-7xl font-extrabold mb-6 text-pretty bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary animate-slide-in-left" style={{ textShadow: '2px 2px 4px rgba(4, 2, 2, 0.5)' }}>
+      <h1 className="text-6xl md:text-7xl font-extrabold mb-6 text-pretty bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary animate-slide-in-left" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.25)' }}>
         {siteConfig.name}
       </h1>
       <p className="text-xl mb-8 text-pretty text-gray-300 animate-slide-in-left" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.9)' }}>
