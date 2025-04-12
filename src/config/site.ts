@@ -21,7 +21,7 @@ export const siteConfig = {
       'Driven Software Developer specializing in backend and full-stack roles, with a strong command of JavaScript, C, and Python. Certified in Data Structures and Python Programming, skilled in Node.js, React.js, and MongoDB. Proven ability to build secure, scalable web applications and improve database management and API integrations. Passionate about leveraging deep technical expertise and robust problem-solving skills to contribute to innovative software solutions in dynamic environments.',
     achievements: [
       'ENIGMA 2023 Runners-Up.',
-      'Best Paper @ 3rd Int Conference on Advancements in Research & Development',
+      'Best Paper @ 3rd International Conference on Advancements in Research & Development',
       
     ],
   },

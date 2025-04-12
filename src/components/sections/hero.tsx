@@ -1,54 +1,15 @@
+
 'use client';
 
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Image from 'next/image';
 import {siteConfig} from '@/config/site';
 import {Button} from '@/components/ui/button';
 import {Github, Linkedin} from 'lucide-react';
 
 const Hero = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [
-    '/p1.jpeg',
-    '/p2.jpg',
-    '/p3.jpeg',
-    'https://picsum.photos/id/240/3000/2000',
-  ];
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
-    }, 5000);
-
-    return () => clearInterval(intervalId);
-  }, [images.length]);
-
   return (
     <section className="container py-24 relative overflow-hidden">
-      {/* Sliding Images (Background) */}
-      <div
-        className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
-        style={{
-          transform: `translateX(-${currentImageIndex * 100}%)`,
-        }}
-      >
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="w-full flex-shrink-0 relative opacity-60"
-            style={{width: '100%'}}
-          >
-            <Image
-              src={image}
-              alt={`Slide ${index + 1}`}
-              layout="fill"
-              objectFit="cover"
-              priority
-            />
-          </div>
-        ))}
-      </div>
-
       {/* Content Container (to ensure text is above the images) */}
       <div className="relative z-10 flex flex-col items-center justify-center">
         {/* Profile Photo */}

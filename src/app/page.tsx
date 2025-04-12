@@ -8,6 +8,7 @@ import {
   Contact,
   Footer,
   Achievements,
+  Gallery,
 } from '@/components/sections';
 import { siteConfig } from '@/config/site';
 
@@ -23,6 +24,7 @@ export default function Home() {
           <About />
           <Achievements />
           <Projects />
+          <Gallery />
           <Contact />
       </main>
 

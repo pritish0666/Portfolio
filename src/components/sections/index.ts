@@ -6,3 +6,4 @@ export { default as Projects } from './projects';
 export { default as Contact } from './contact';
 export { default as Footer } from './footer';
 export { default as Achievements } from './achievements';
+export { default as Gallery } from './gallery';
