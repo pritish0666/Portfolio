@@ -4,10 +4,11 @@ import {
   Navigation,
   Hero,
   About,
+  Skills,
+  Achievements,
   Projects,
   Contact,
   Footer,
-  Achievements,
   Gallery,
 } from '@/components/sections';
 import { siteConfig } from '@/config/site';
@@ -22,6 +23,7 @@ export default function Home() {
       <main className="flex-1">
           <Hero />
           <About />
+          <Skills />
           <Achievements />
           <Projects />
           <Gallery />
