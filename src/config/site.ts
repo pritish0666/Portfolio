@@ -26,9 +26,9 @@ export const siteConfig = {
   },
   projects: [
     {
-      name: 'Project 1',
+      name: 'Complete-Backend',
       description: [
-        'Point 1: Describe the project and your role.',
+        'Point 1: Designed a secure authentication system using CAPTCHA verification, refresh tokens  and access tokens',
         'Point 2: Explain the technologies used.',
         'Point 3: Highlight a key feature or challenge.',
       ],

@@ -13,9 +13,11 @@ const Projects: React.FC = () => {
         {siteConfig.projects.map((project) => (
           <div key={project.name} className="rounded-lg card-shadow p-6 bg-card">
             <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
-            <p className="text-muted-foreground mb-4">
-              {project.description.join(' ')} {/* Combine description points into a paragraph */}
-            </p>
+            <ul className="list-disc list-inside text-muted-foreground mb-4">
+              {project.description.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
 
             {/* Project Links */}
             {project.links && (
@@ -48,3 +50,5 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
+
+    
