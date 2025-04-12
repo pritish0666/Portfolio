@@ -23,25 +23,25 @@ const Navigation = () => {
           <div className="hidden md:flex space-x-6 items-center">
             <Link
               href="/"
-              className="nav-link-hover transition-colors no-underline hover:underline rounded-full px-3 py-1 hover:bg-accent hover:text-accent-foreground"
+              className="nav-link-hover transition-colors no-underline hover:bg-accent hover:text-accent-foreground rounded-full px-3 py-1"
             >
               Home
             </Link>
             <Link
               href="#about"
-              className="nav-link-hover transition-colors no-underline hover:underline rounded-full px-3 py-1 hover:bg-accent hover:text-accent-foreground"
+              className="nav-link-hover transition-colors no-underline hover:bg-accent hover:text-accent-foreground rounded-full px-3 py-1"
             >
               About
             </Link>
             <Link
               href="#projects"
-              className="nav-link-hover transition-colors no-underline hover:underline rounded-full px-3 py-1 hover:bg-accent hover:text-accent-foreground"
+              className="nav-link-hover transition-colors no-underline hover:bg-accent hover:text-accent-foreground rounded-full px-3 py-1"
             >
               Projects
             </Link>
             <Link
               href="#contact"
-              className="nav-link-hover transition-colors no-underline hover:underline rounded-full px-3 py-1 hover:bg-accent hover:text-accent-foreground"
+              className="nav-link-hover transition-colors no-underline hover:bg-accent hover:text-accent-foreground rounded-full px-3 py-1"
             >
               Contact
             </Link>
