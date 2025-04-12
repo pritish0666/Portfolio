@@ -38,18 +38,6 @@ export const siteConfig = {
       },
     },
     {
-      name: 'Project 2',
-      description: [
-        'Point 1: Describe the project and your role.',
-        'Point 2: Explain the technologies used.',
-        'Point 3: Highlight a key feature or challenge.',
-      ],
-      links: {
-        github: 'https://github.com/',
-        deployment: 'https://example.com/',
-      },
-    },
-    {
       name: 'Real-Time Chat App',
       description: [
         'Built a MERN chat app with Socket.IO, reducing latency by 80% for real-time messaging.',
@@ -62,17 +50,16 @@ export const siteConfig = {
       },
     },
     {
-      name: 'Project 4',
+      name: 'LinkedIn Post Reactor – Chrome Extension',
       description: [
-        'Point 1: Describe the project and your role.',
-        'Point 2: Explain the technologies used.',
-        'Point 3: Highlight a key feature or challenge.',
+        'Automated post reactions on LinkedIn using JavaScript and DOM manipulation, reducing user effort by 50%.',
+        'Designed a user-friendly popup interface for streamlined input, improving task efficiency by 35%.',
+        'Published the extension on the Chrome Web Store, garnering over 100 installations within the first month.',
       ],
       links: {
-        github: 'https://github.com/',
-        deployment: 'https://example.com/',
+        github: 'https://github.com/pritish0666/LinkedIN_Post_React',
+        deployment: 'https://chromewebstore.google.com/detail/linkedin-post-reactor/mbkphhdgblhfbdhddakcelfpnjlppcmj',
       },
     },
   ],
 };
-
