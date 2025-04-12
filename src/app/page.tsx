@@ -21,10 +21,10 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-          <Hero />
-          <About />
-          <Skills />
-          <Achievements />
+          <Hero  />
+          <About/>
+          <Skills/>
+          <Achievements/>
           <Projects />
           <Gallery />
           <Contact />

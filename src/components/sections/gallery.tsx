@@ -6,11 +6,10 @@ import { Icons } from '@/components/icons';
 
 const Gallery = () => {
   const images = [
-    '/p1.jpeg',
     '/p2.jpg',
     '/p3.jpeg',
-    '/p4.jpg',
-    '/p5.jpg',
+    '/p4.jpeg',
+    '/p5.jpeg',
   ];
 
   return (
@@ -23,10 +22,9 @@ const Gallery = () => {
             <Image
               src={src}
               alt={`Gallery Image ${index + 1}`}
-              width={500}
+              width={400}
               height={300}
-              layout="responsive"
-              objectFit="cover"
+              objectFit="contain"
               className="transition-transform transform hover:scale-105"
             />
           </div>
