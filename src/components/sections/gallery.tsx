@@ -5,10 +5,10 @@ import Image from 'next/image';
 import {ChevronLeft, ChevronRight} from 'lucide-react';
 
 const images = [
-  '/p1.jpeg',
+  '/p5.jpeg',
   '/p2.jpg',
   '/p3.jpeg',
-  'https://picsum.photos/id/240/3000/2000',
+  '/p4.jpeg',
 ];
 
 const Gallery = () => {
@@ -43,7 +43,7 @@ const Gallery = () => {
     <section id="gallery" className="container py-24">
       <h2 className="text-3xl font-bold mb-8 text-center">Gallery</h2>
       <div className="relative">
-        <div className="relative h-[600px] overflow-hidden">
+        <div className="relative h-[800px] overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
@@ -59,7 +59,7 @@ const Gallery = () => {
                   src={image}
                   alt={`Gallery Image ${index + 1}`}
                   width={1000}
-                  height={600}
+                  height={800}
                   style={{
                     objectFit: 'cover',
                     width: '100%',
