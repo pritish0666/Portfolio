@@ -43,7 +43,7 @@ const Gallery = () => {
     <section id="gallery" className="container py-24">
       <h2 className="text-3xl font-bold mb-8 text-center">Gallery</h2>
       <div className="relative">
-        <div className="relative h-[800px] overflow-hidden">
+        <div className="relative h-[450px] overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
@@ -58,8 +58,8 @@ const Gallery = () => {
                 <Image
                   src={image}
                   alt={`Gallery Image ${index + 1}`}
-                  width={1000}
-                  height={800}
+                  width={800}
+                  height={450}
                   style={{
                     objectFit: 'cover',
                     width: '100%',
@@ -90,3 +90,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
