@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, {useState, useEffect, useRef} from 'react';
@@ -55,13 +54,17 @@ const Gallery = () => {
               <div
                 key={index}
                 className="w-full flex-shrink-0 relative"
-                style={{width: '100%'}}
               >
                 <Image
                   src={image}
                   alt={`Gallery Image ${index + 1}`}
-                  layout="fill"
-                  objectFit="cover"
+                  width={1000}
+                  height={600}
+                  style={{
+                    objectFit: 'cover',
+                    width: '100%',
+                    height: '100%',
+                  }}
                 />
               </div>
             ))}
@@ -87,3 +90,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
