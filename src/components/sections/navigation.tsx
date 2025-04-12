@@ -1,4 +1,3 @@
-
 'use client';
 
 import React from 'react';
@@ -33,6 +32,18 @@ const Navigation = () => {
               className="nav-link-hover transition-colors no-underline hover:bg-accent hover:text-accent-foreground rounded-full px-3 py-1"
             >
               About
+            </Link>
+            <Link
+              href="#skills"
+              className="nav-link-hover transition-colors no-underline hover:bg-accent hover:text-accent-foreground rounded-full px-3 py-1"
+            >
+              Skills
+            </Link>
+            <Link
+              href="#achievements"
+              className="nav-link-hover transition-colors no-underline hover:bg-accent hover:text-accent-foreground rounded-full px-3 py-1"
+            >
+              Achievements
             </Link>
             <Link
               href="#projects"
@@ -81,6 +92,20 @@ const Navigation = () => {
                 onClick={toggleMenu}
               >
                 About
+              </Link>
+              <Link
+                href="#skills"
+                className="block py-2 hover:text-accent transition-colors"
+                onClick={toggleMenu}
+              >
+                Skills
+              </Link>
+              <Link
+                href="#achievements"
+                className="block py-2 hover:text-accent transition-colors"
+                onClick={toggleMenu}
+              >
+                Achievements
               </Link>
               <Link
                 href="#projects"
